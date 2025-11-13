@@ -238,7 +238,7 @@ const SideBar = () => {
           })}
         </ul>
         <div className="copyright">
-          <p><strong>Invome Admin Dashboard</strong> © {year} All Rights Reserved</p>
+          <p><strong>GREX Admin Dashboard</strong> © {year} All Rights Reserved</p>
           <p className="fs-12">Made with
             <span className="heart" onClick={heartBlast}></span>
             by DexignLabs

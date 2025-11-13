@@ -47,7 +47,7 @@ function Register(props) {
                   <div className="auth-form">
                     <div className="text-center mb-3">
                       <Link to="/login">
-                        <img src={logo} alt="" />
+                                      <img src={logoWhite} alt="GREX" className="fintech-logo" />
                       </Link>
                     </div>
                     <h4 className="text-center mb-4 ">Sign up your account</h4>

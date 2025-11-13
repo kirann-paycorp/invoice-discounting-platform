@@ -1,13 +1,13 @@
 // Hardcoded user database for demo purposes
 export const USER_DATABASE = {
     // Seller - Creates contracts and projects
-    'seller@invome.com': {
+    'seller@grex.com': {
         password: 'seller123',
         role: 'seller',
         profile: {
             id: 'USER_001',
             name: 'John Smith',
-            email: 'seller@invome.com',
+            email: 'seller@grex.com',
             company: 'Smith Trading Corp',
             avatar: './headshot-1.webp',
             permissions: [
@@ -21,13 +21,13 @@ export const USER_DATABASE = {
     },
 
     // Financier - Reviews and funds projects
-    'financier@invome.com': {
+    'financier@grex.com': {
         password: 'financier123',
         role: 'financier',
         profile: {
             id: 'USER_002',
             name: 'Sarah Johnson',
-            email: 'financier@invome.com',
+            email: 'financier@grex.com',
             company: 'Global Finance Partners',
             avatar: '/images/avatar/2.jpg',
             permissions: [
@@ -41,14 +41,14 @@ export const USER_DATABASE = {
     },
 
     // Admin - System administrator with full access
-    'admin@invome.com': {
+    'admin@grex.com': {
         password: 'admin123',
         role: 'admin',
         profile: {
             id: 'USER_003',
             name: 'Michael Chen',
-            email: 'admin@invome.com',
-            company: 'Invome Technologies',
+            email: 'admin@grex.com',
+            company: 'GREX',
             avatar: '/images/avatar/3.jpg',
             permissions: [
                 'view_all_data',
@@ -63,13 +63,13 @@ export const USER_DATABASE = {
     },
 
     // Buyer - Views and manages purchase orders
-    'buyer@invome.com': {
+    'buyer@grex.com': {
         password: 'buyer123',
         role: 'buyer',
         profile: {
             id: 'USER_004',
             name: 'Emma Williams',
-            email: 'buyer@invome.com',
+            email: 'buyer@grex.com',
             company: 'Retail Solutions Ltd',
             avatar: '/images/avatar/4.jpg',
             permissions: [
@@ -85,22 +85,22 @@ export const USER_DATABASE = {
 // Demo credentials for easy reference
 export const DEMO_CREDENTIALS = {
     seller: {
-        email: 'seller@invome.com',
+        email: 'seller@grex.com',
         password: 'seller123',
         description: 'Creates contracts and invoice projects'
     },
     financier: {
-        email: 'financier@invome.com', 
+        email: 'financier@grex.com', 
         password: 'financier123',
         description: 'Reviews and funds invoice discounting projects'
     },
     admin: {
-        email: 'admin@invome.com',
+        email: 'admin@grex.com',
         password: 'admin123', 
         description: 'System administrator with full access'
     },
     buyer: {
-        email: 'buyer@invome.com',
+        email: 'buyer@grex.com',
         password: 'buyer123',
         description: 'Manages purchase orders and supplier relationships'
     }

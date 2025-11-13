@@ -60,11 +60,11 @@ function Login(props) {
         <div className="fintech-login-left">
           <div className="fintech-brand-section">
             <div className="fintech-logo-container">
-              <img src={logoWhite} alt="Invome" className="fintech-logo" />
+              <img src={logoWhite} alt="GREX" className="fintech-logo" />
             </div>
             <div className="fintech-welcome-content">
               <h1 className="fintech-main-title">
-                Welcome to <span className="fintech-accent">Invome</span>
+                Welcome to <span className="fintech-accent">GREX</span>
               </h1>
               <p className="fintech-subtitle">
                 Your trusted partner in invoice discounting and financial solutions. 
@@ -101,7 +101,7 @@ function Login(props) {
             <div className="fintech-legal-links">
               <Link to={"#"} className="fintech-legal-link">Privacy Policy</Link>
               <Link to={"#"} className="fintech-legal-link">Terms of Service</Link>
-              <span className="fintech-copyright">© {year} Invome</span>
+              <span className="fintech-copyright">© {year} GREX</span>
             </div>
           </div>
         </div>
