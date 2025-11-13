@@ -1,0 +1,332 @@
+/* Clean Professional White Theme */
+
+/* ====================================
+   Navigation Header (Top Navbar) 
+   ==================================== */
+.nav-header {
+    background: #ffffff !important;
+    border-bottom: 1px solid #e5e7eb !important;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06) !important;
+}
+
+.nav-header .brand-logo .brand-title h2 {
+    color: #1f2937 !important;
+    font-weight: 700 !important;
+}
+
+.nav-header .brand-logo .brand-title h2 span {
+    color: #3b82f6 !important;
+    opacity: 1 !important;
+}
+
+.nav-header .brand-logo .brand-title .brand-sub-title {
+    color: #6b7280 !important;
+    font-weight: 500 !important;
+}
+
+.nav-header .hamburger .line {
+    background: #374151 !important;
+}
+
+.nav-header .nav-control .hamburger .line {
+    background: #374151 !important;
+}
+
+/* ====================================
+   Top Header (Main Navbar)
+   ==================================== */
+.header {
+    background: #ffffff !important;
+    border-bottom: 1px solid #e5e7eb !important;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06) !important;
+}
+
+.header .header-content {
+    background: transparent !important;
+}
+
+.header .header-content .navbar {
+    background: transparent !important;
+}
+
+.header .dashboard_bar {
+    color: #1f2937 !important;
+    font-weight: 600 !important;
+    font-size: 1.5rem !important;
+}
+
+.header .nav-item .nav-link {
+    color: #6b7280 !important;
+    transition: color 0.3s ease !important;
+}
+
+.header .nav-item .nav-link:hover {
+    color: #3b82f6 !important;
+}
+
+/* Profile dropdown in header */
+.header .dropdown-menu {
+    border: 1px solid #e5e7eb !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* ====================================
+   Sidebar / Deznav
+   ==================================== */
+.deznav {
+    background: #ffffff !important;
+    border-right: 1px solid #e5e7eb !important;
+    box-shadow: 1px 0 3px 0 rgba(0, 0, 0, 0.1), 1px 0 2px 0 rgba(0, 0, 0, 0.06) !important;
+}
+
+.deznav .metismenu {
+    background: transparent !important;
+    padding: 20px 0 !important;
+}
+
+.deznav .metismenu li {
+    margin-bottom: 2px !important;
+}
+
+.deznav .metismenu li a {
+    color: #6b7280 !important;
+    border-radius: 8px !important;
+    margin: 2px 12px !important;
+    padding: 12px 16px !important;
+    transition: all 0.2s ease !important;
+    font-weight: 500 !important;
+}
+
+.deznav .metismenu li a:hover {
+    background: #f3f4f6 !important;
+    color: #374151 !important;
+    transform: translateX(2px) !important;
+}
+
+.deznav .metismenu li a.active,
+.deznav .metismenu li a.mm-active {
+    background: #eff6ff !important;
+    color: #1d4ed8 !important;
+    font-weight: 600 !important;
+    border-left: 3px solid #3b82f6 !important;
+}
+
+.deznav .metismenu li a i {
+    color: #9ca3af !important;
+    margin-right: 12px !important;
+    font-size: 16px !important;
+    width: 20px !important;
+    text-align: center !important;
+}
+
+.deznav .metismenu li a.active i,
+.deznav .metismenu li a:hover i {
+    color: #3b82f6 !important;
+}
+
+/* Submenu styling */
+.deznav .metismenu li ul {
+    background: #f9fafb !important;
+    border-radius: 6px !important;
+    margin: 4px 12px 8px 12px !important;
+    padding: 8px 0 !important;
+    border-left: 2px solid #e5e7eb !important;
+}
+
+.deznav .metismenu li ul li a {
+    color: #6b7280 !important;
+    padding: 8px 16px 8px 45px !important;
+    font-size: 14px !important;
+    margin: 2px 8px !important;
+    border-radius: 4px !important;
+}
+
+.deznav .metismenu li ul li a:hover {
+    background: #f3f4f6 !important;
+    color: #374151 !important;
+    transform: translateX(2px) !important;
+}
+
+.deznav .metismenu li ul li a.active {
+    background: #eff6ff !important;
+    color: #1d4ed8 !important;
+    border-left: 2px solid #3b82f6 !important;
+}
+
+/* Profile section in sidebar */
+.deznav .profile {
+    background: #f9fafb !important;
+    border-top: 1px solid #e5e7eb !important;
+    margin-top: auto !important;
+    padding: 20px !important;
+    border-radius: 8px 8px 0 0 !important;
+}
+
+.deznav .profile .profile-details {
+    color: #374151 !important;
+}
+
+.deznav .profile .profile-details h4 {
+    color: #1f2937 !important;
+    font-weight: 600 !important;
+    margin-bottom: 5px !important;
+}
+
+.deznav .profile .profile-details span {
+    color: #6b7280 !important;
+    font-size: 13px !important;
+}
+
+/* ====================================
+   Content Area Adjustments
+   ==================================== */
+.content-body {
+    background: #f9fafb !important;
+    min-height: calc(100vh - 80px) !important;
+}
+
+/* ====================================
+   Responsive Adjustments
+   ==================================== */
+@media (max-width: 768px) {
+    .deznav {
+        background: #ffffff !important;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+    }
+    
+    .nav-header .brand-title h2 {
+        font-size: 1.3rem !important;
+    }
+}
+
+/* ====================================
+   Dark Theme Compatibility
+   ==================================== */
+[data-theme-version="dark"] .nav-header {
+    background: #1f2937 !important;
+    border-bottom: 1px solid #374151 !important;
+}
+
+[data-theme-version="dark"] .nav-header .brand-logo .brand-title h2 {
+    color: #f9fafb !important;
+}
+
+[data-theme-version="dark"] .nav-header .brand-logo .brand-title .brand-sub-title {
+    color: #d1d5db !important;
+}
+
+[data-theme-version="dark"] .deznav {
+    background: #1f2937 !important;
+    border-right: 1px solid #374151 !important;
+}
+
+[data-theme-version="dark"] .deznav .metismenu li a {
+    color: #d1d5db !important;
+}
+
+[data-theme-version="dark"] .deznav .metismenu li a:hover {
+    background: #374151 !important;
+    color: #f9fafb !important;
+}
+
+[data-theme-version="dark"] .header {
+    background: #1f2937 !important;
+    border-bottom: 1px solid #374151 !important;
+}
+
+[data-theme-version="dark"] .header .dashboard_bar {
+    color: #f9fafb !important;
+}
+
+[data-theme-version="dark"] .content-body {
+    background: #111827 !important;
+}
+
+/* ====================================
+   Mini Sidebar Adjustments
+   ==================================== */
+[data-sidebar-style="mini"] .deznav .metismenu li a {
+    text-align: center !important;
+    padding: 12px !important;
+    margin: 2px 4px !important;
+}
+
+[data-sidebar-style="mini"] .deznav .metismenu li a span {
+    display: none !important;
+}
+
+[data-sidebar-style="mini"] .deznav .metismenu li a i {
+    margin-right: 0 !important;
+    font-size: 18px !important;
+}
+
+/* ====================================
+   Animation and Transitions
+   ==================================== */
+.nav-header,
+.header,
+.deznav {
+    transition: all 0.2s ease !important;
+}
+
+.deznav .metismenu li a {
+    transition: all 0.2s ease !important;
+}
+
+/* ====================================
+   Focus and Active States
+   ==================================== */
+.deznav .metismenu li a:focus {
+    background: #f3f4f6 !important;
+    outline: 2px solid #3b82f6 !important;
+    outline-offset: -2px !important;
+}
+
+/* ====================================
+   Scrollbar Styling for Sidebar
+   ==================================== */
+.deznav::-webkit-scrollbar {
+    width: 6px !important;
+}
+
+.deznav::-webkit-scrollbar-track {
+    background: #f3f4f6 !important;
+}
+
+.deznav::-webkit-scrollbar-thumb {
+    background: #d1d5db !important;
+    border-radius: 3px !important;
+}
+
+.deznav::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af !important;
+}
+
+/* Override theme variables */
+:root {
+    --nav-headbg: #ffffff !important;
+    --sidebar-bg: #ffffff !important;
+    --headerbg: #ffffff !important;
+}
+
+/* Ensure clean, minimal appearance */
+.nav-header .brand-logo svg {
+    filter: none !important;
+}
+
+/* Clean card styling for consistency */
+.card {
+    border: 1px solid #e5e7eb !important;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06) !important;
+}
+
+/* Button improvements for consistency */
+.btn-primary {
+    background-color: #3b82f6 !important;
+    border-color: #3b82f6 !important;
+}
+
+.btn-primary:hover {
+    background-color: #2563eb !important;
+    border-color: #2563eb !important;
+}

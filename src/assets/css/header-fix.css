@@ -1,0 +1,30 @@
+/* Simple Header Fixed Position Fix */
+
+/* Make the NavHeader (logo area) fixed at the top */
+.nav-header {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 1001 !important;
+  background: #ffffff !important;
+}
+
+/* Make the header area fixed at the top */
+.header {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 1000 !important;
+  background: #ffffff !important;
+}
+
+/* Reduce gap - smaller padding for less empty space */
+#main-wrapper {
+  padding-top: 70px !important;
+}
+
+/* Keep everything else normal */
+.content-body {
+  margin-top: 0 !important;
+}
