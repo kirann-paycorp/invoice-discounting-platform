@@ -72,6 +72,43 @@ const SellerDashboard = () => {
     const [showProjectDetails, setShowProjectDetails] = useState(false);
     const [selectedProjectDetails, setSelectedProjectDetails] = useState(null);
     
+    // State for pending invoices filter
+    const [pendingInvoiceFilter, setPendingInvoiceFilter] = useState('buyer');
+    
+    // Pending invoice data based on filter
+    const getPendingInvoiceData = () => {
+        switch(pendingInvoiceFilter) {
+            case 'buyer':
+                return {
+                    amount: '₹8.2M',
+                    count: 5,
+                    avgDiscount: '7.8%',
+                    description: 'Buyer Approval'
+                };
+            case 'financier':
+                return {
+                    amount: '₹12.8M',
+                    count: 8,
+                    avgDiscount: '6.2%',
+                    description: 'Financier Approval'
+                };
+            case 'future':
+                return {
+                    amount: '₹6.5M',
+                    count: 3,
+                    avgDiscount: '8.1%',
+                    description: 'Future Invoices'
+                };
+            default:
+                return {
+                    amount: '₹8.2M',
+                    count: 5,
+                    avgDiscount: '7.8%',
+                    description: 'Buyer Approval'
+                };
+        }
+    };
+    
     // Initialize default clients data
     const defaultClients = [
         {
@@ -177,6 +214,11 @@ const SellerDashboard = () => {
                     return updatedClients;
                 });
             }
+        };
+
+        // Close dropdown when clicking outside
+        const handleClickOutside = (event) => {
+            // Removed dropdown functionality
         };
 
         console.log('🎯 SellerDashboard: Event listener attached');
@@ -344,10 +386,12 @@ const SellerDashboard = () => {
     
     const [financialMetrics] = useState({
         activeProjects: { count: 8, value: '₹52.5M', growth: '+15%', period: 'this quarter' },
-        pendingInvoices: { amount: '₹8.2M', count: 5, avgDiscount: '7.8%' },
         fundedAmount: { total: '₹44.3M', thisMonth: '₹12.1M', growth: '+23%' },
-        avgProcessingTime: { hours: "₹44.3M", sla: '+33%', performance: 'excellent' }
+        avgProcessingTime: { hours: "₹4.3M", sla: '+33%', performance: 'Expected in next 7 days' }
     });
+    
+    // Get dynamic pending invoice data
+    const currentPendingData = getPendingInvoiceData();
 
     // Active Projects state management
     const [currentProjects, setCurrentProjects] = useState(() => {
@@ -668,7 +712,7 @@ const SellerDashboard = () => {
                                     </svg>
                                 </span>
                                 <div className="invoices">
-                                    <h4>{financialMetrics.pendingInvoices.amount}</h4>
+                                    <h4>{currentPendingData.amount}</h4>
                                     <span>Pending Invoices</span>
                                 </div>
                             </div>
@@ -676,10 +720,43 @@ const SellerDashboard = () => {
                         <Card.Body className="p-0">
                             <div className="p-3">
                                 <div className="d-flex justify-content-between align-items-center">
-                                    <span className="fs-6 fw-medium">{financialMetrics.pendingInvoices.count} invoices</span>
+                                    <span className="fs-6 fw-medium">{currentPendingData.count} invoices</span>
                                     <Badge bg="warning" className="fs-7">
-                                        {financialMetrics.pendingInvoices.avgDiscount}
+                                        {currentPendingData.avgDiscount}
                                     </Badge>
+                                </div>
+                                
+                                {/* Filter Tabs - Compact Design */}
+                                <div className="mt-2">
+                                    <div className="d-flex justify-content-between">
+                                        <small 
+                                            className={`px-2 py-1 rounded cursor-pointer fw-bold ${
+                                                pendingInvoiceFilter === 'buyer' ? 'bg-primary text-white' : 'text-primary'
+                                            }`}
+                                            style={{ cursor: 'pointer', fontSize: '13px' }}
+                                            onClick={() => setPendingInvoiceFilter('buyer')}
+                                        >
+                                            Buyer
+                                        </small>
+                                        <small 
+                                            className={`px-2 py-1 rounded cursor-pointer fw-bold ${
+                                                pendingInvoiceFilter === 'financier' ? 'bg-primary text-white' : 'text-primary'
+                                            }`}
+                                            style={{ cursor: 'pointer', fontSize: '13px' }}
+                                            onClick={() => setPendingInvoiceFilter('financier')}
+                                        >
+                                            Financier
+                                        </small>
+                                        <small 
+                                            className={`px-2 py-1 rounded cursor-pointer fw-bold ${
+                                                pendingInvoiceFilter === 'future' ? 'bg-primary text-white' : 'text-primary'
+                                            }`}
+                                            style={{ cursor: 'pointer', fontSize: '13px' }}
+                                            onClick={() => setPendingInvoiceFilter('future')}
+                                        >
+                                            Future
+                                        </small>
+                                    </div>
                                 </div>
                             </div>
                         </Card.Body>
@@ -727,7 +804,7 @@ const SellerDashboard = () => {
                                 </span>
                                 <div className="invoices">
                                     <h4>{financialMetrics.avgProcessingTime.hours}</h4>
-                                    <span>Avg Funded Amount</span>
+                                    <span>Upcoming Settlements</span>
                                 </div>
                             </div>
                         </Card.Header>

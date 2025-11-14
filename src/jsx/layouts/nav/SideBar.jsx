@@ -241,7 +241,7 @@ const SideBar = () => {
           <p><strong>GREX Admin Dashboard</strong> © {year} All Rights Reserved</p>
           <p className="fs-12">Made with
             <span className="heart" onClick={heartBlast}></span>
-            by DexignLabs
+            by Paycorp
           </p>
         </div>
       </PerfectScrollbar>
